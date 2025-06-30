@@ -31,7 +31,146 @@
         <div class="flex-row">
                 <div class="flex-item flex-column">
                   <h2 id="adaptive-image">Mini-challenges</h2>
-  
+                  <br>
+                  <h3>Challenge 1 - Mini-MonNet (montage networks)</h3>
+                  <strong>Description of the Challenge</strong>
+                  In French, the word montage applied to cinema simply denotes editing. In Soviet montage theory, as originally introduced outside the USSR by Sergei Eisenstein, editing was the key mechanism for producing meaning. Later, the term "montage sequence", used primarily by British and American studios, became the common technique to suggest the passage of time.
+                  <br>
+                  We know that editing is an essential aspect of filmmaking. The types of shots that are available to a filmmaker or editor are fairly standardised and can be taken to be similar to the notes in a musical composition: their ordering, duration, and patterns of repetition and difference are carefully designed for effect, allowing the creative manipulation of time to shape a story using moving images. But unlike music, there are no computational methods specifically designed to model film editing. The goal of this challenge is to make progress towards such modelling. From film theory, we know that different editing styles have been identified to correspond to different filmmaking traditions. We want to know if and how we can detect these patterns computationally. Given the mini scope of this mini hackathon, we are aiming for a minimal binary classifier: Hollywood vs non-Hollywood films. Can we make this distinction based solely on editing patterns?
+                  <br>
+                  <strong>The mini challenge</strong>
+                  The group working on mini-MonNet at ADHO will focus on evaluating the encoding strategy (how shots are represented as data) and analysing the results (if and how these encoding tell us something useful about editing style). This includes:
+                  <ol>
+                    <li>Brief introduction to how editing is relevant</li>
+                    <li>(soft) code review of data and analysis scripts</li>
+                    <li>Sampling and close reading (watching) of the samples</li>
+                    <li>Exploratory data visualisation</li>
+                    <li>Tweaking parameters for one or more re-runs of the processing method</li>
+                  <ol>
+                  <br>
+                  The goal is to test editing as a proxy for style in the widest possible sense, initially just if and and how the modelling matches known categories from film theory.
+                  <br>
+                  We will be using a custom pipeline to segment (shot boundary detection), annotate (shot scale classification), analyse (Markov dynamics) and visualisation (high-dimensional projection) of the material. Our afternoon will be successful if we can establish a baseline run for this kind of analysis that can be shared and replicated by others.
+                  <br>
+                  <strong>Dataset</strong>
+                  To identify these editing patterns, we will break down a collection of movie clips into its constituent shots, and represent these shots by a set of features, starting with shot duration, scale, and visual appearance. The dataset comprises a sample of these movie clips, from Hollywood and non-Hollywood traditions annotated by a film expert who will join us on the day. Download links for the files, metadata and code for segmentation and pre-processing to follow shortly.
+                  <br>
+                  <strong>Mission - How can you contribute to this challenge?</strong>
+                  Colleagues from the fields of film and media can contribute to the definition of the task and the selection of features: are they relevant; do they fit with current film theory; are the results expected/surprising? They will be in a strong position to ask loads of questions and challenge the assumptions of the experiments.
+                  <br>
+                  Computer vision specialist colleagues can contribute their own or other methods, discuss alternative encoding or processing strategies, suggest code enhancements, and new technical directions. They will be in a strong position to test and implement variations of the core idea, and to challenge the computational feasibility of this kind of analysis.
+                  <br>
+                  Digital humanities or other types of interdisciplinary colleagues can contribute knowledge from their fields, including experiences with different types of temporal media, such as music and sound, videogames, or internet culture. They will be in a strong position to make connections, help understanding across disciplines, critique and suggest different kinds of data exploration and visualisation.
+                  <br>
+                  Participants from any background may also want to contribute by documenting and formatting the experiments with a view of making them reproducible and accessible to other research communities.
+
+                 <br>
+                 
+                 <h3>Challenge 2 - Framing Fossil Fuels: Visual Strategies in Socialist Non-Fiction Cinema</h3>
+                  <strong>Description of the Challenge</strong>
+                  In this mini-challenge, participants will have the opportunity to explore a curated dataset of short non-fiction films and examine the visual language employed by state industry to present and explain new energy resources (coal, water, oil, gas, nuclear) to a broad audience. Using the open-source tool Collection Space Navigator (CSN), designed for the exploration and analysis of large collections of visual digital artifacts, participants will search for recurring visual patterns. They may choose to focus on a specific thematic cluster (coal, water, oil, gas, nuclear) to identify shared visual strategies, or adopt a temporal perspective to investigate how visual or thematic elements (such as representation of human labor, resource extraction and processing, automated processes, etc.), evolve over the selected time period.
+                  <br>
+                  <strong>Dataset</strong>
+                  The sample consists of Czechoslovak short non-fiction films covering the period of the 1950s to the 1980s produced by the state studios under the so-called Krátký film (Short Film). The films are thematically divided into categories based on the type of the resource under focus. The dataset itself includes a representative frame from the midpoint of every shot segment across all films in the sample. The frames are provided with metadata on the film title, year of production, category, and the director.
+                  <br>
+                  <strong>Mission - How can you contribute to this challenge?</strong>
+                  The workshop invites participants to engage with the Collection Space Navigator to investigate recurring visual patterns through interactive techniques such as zooming and scaling, shifting between different projections, and filtering dimensions using range sliders.
+                  <br>
+                  Participants will be encouraged to reflect on a set of guiding questions, including but not limited to:
+                  <ul>
+                    <li>What common visual characteristics can be identified within individual film categories?</li>
+                    <li>How do these features compare across different categories?</li>
+                    <li>Can specific objects or visual elements be identified as representative of particular groups of films?</li>
+                    <li>Is it possible to trace the evolution of visual patterns within a given category over time?</li>
+                  </ul>
+                  <br>
+                  By addressing these questions, participants will contribute to a deeper understanding of how the state visually communicated topics such as fossil fuel extraction and processing, and how these representations conveyed their economic and scientific significance within socialist society.
+                  <br>
+                  <h3>Challenge 3 - DOCUMERICA: Documentary Environmental Photography from the 1970s</h3>
+                  <strong>Description of the Challenge</strong>
+                  The United States Environmental Protection Agency (EPA) emerged in 1970 to implement policies that would support efforts to improve the health of the environment and American citizens. Within a year of the EPA's founding, the new agency started Documerica, a documentary photography project designed to record the current state of the environment and improvements brought by new policies. With an archive of photographs documenting the need for and implementation of environmental laws, the project offers a powerful lens into the nation's effort to become more environmentally friendly. Nearly 16,000 photographs from the Documerica collection are digitized and available from the U.S. National Archives and Records Association (NARA), all in the public domain.
+                  <br>
+                  Using computational methods, we are interested in several questions, including: (1) how can we categorize the themes in the collection, (2) did certain photographers focus on specific topics, or is there a wide range of topics covered by many of the photographers, and (3) are there any
+                  <br>
+                  <strong>Dataset</strong>
+                  The full data can be accessed and downloaded directly from the following URL:
+                  <a href="https://doi.org/10.5281/zenodo.15585257">https://doi.org/10.5281/zenodo.15585257</a>
+                  <br>
+                  The dataset contains derived data from the Documerica Photographic corpus, 15,911 photographic images created by the U.S. Environmental Protection Agency (EPA). The archives contains the following files:
+                  <ul>
+                    <li>documerica-metadata.csv: Metadata downloaded directly from the United States National Archives. One row per photograph.</li>
+                    <li>documerica_mhm.tar: Zipped archive of the color-corrected digitized images. See referenced paper below for details on the color correction method used.</li>
+                    <li>documerica-gpt4-caption.csv: Automatically generated captions using the gpt-4-turbo-2024-04-09 with the instructions "Provide a detailed plain-text description of the objects, activities, people, background and/or composition of this photograph".</li>
+                    <li>documerica-siglip-embed.json: Embedding generated from the multimodal siglip-base-patch16-224 model.</li>
+                  </ul>
+                  <br>
+                  The datasets are linked by the field nid, which corresponds to the unique numeric ID provided by the National Archives. See the included publications and the Digital Documerica website for more information about the corpus and why it was created.
+                  <br>
+                  <strong>Mission - How can you contribute to this challenge?</strong>
+                  Develop ways of visualizing, addressing, or extending the questions asked in the challenge description. Ideas for potential approaches, even if it is not possible to implement these during the workshop are also welcome. Finally, we also have a working visualization of some elements of the dataset available at <a href="https://digitaldocumerica.org/">https://digitaldocumerica.org/</a>. Advice, ideas, problems, or extensions to the existing visualization are also highly welcome.
+                  <br>
+                  <h3>Challenge 4 - Studying the History of Swedish Journalfilm Through Machine Listening (1930 - 1960)</h3>
+                  <strong>Description of the Challenge</strong>
+                  From the 1910s to the late 1960s, journalfilmer (news journals) were a dominant form of audiovisual news delivery in Sweden. These short documentary-style films, screened before feature films in cinemas, summarized current events and conveyed social information or state propaganda. One of the most iconic features of the genre was the narrator’s voice – high-pitched and highly articulated – formed both by performance conventions and early sound technology.
+                  <br>
+                  This mini-challenge invites participants to analyze how sound was used to construct authority, affect, and persuasion in these early audiovisual media artifacts. By applying machine listening techniques, especially using the YAMNet model for audio event recognition, participants will explore how recurring sonic patterns (such as speech, applause, music, crowd noise, or silence) are distributed across decades and topics. The challenge also opens up questions about how auditory techniques functioned as part of broader communication strategies during the pre-television era in Sweden.
+                  <br>
+                  <strong>Dataset</strong>
+                  The dataset includes digitized audio from historical journalfilmer produced by Svensk Filmindustri, covering the 1930s to the 1960s. These recordings reflect the characteristic features of the genre, including prominently voiced narration and accompanying environmental sounds. These films offer crucial insight into early audiovisual information dissemination strategies and the deliberate integration of sound, through narration, music, and effects, as a tool to reshape how news and ideology were communicated to mass audiences.
+                  <br>
+                  All audio is provided in .mpg or .wav format, converted to mono 16kHz for consistent machine listening. A supporting metadata file (name_year.tsv) links each filename to its corresponding year of release, allowing participants to conduct temporal analysis. This mapping allows exploration of longitudinal patterns in sound usage and stylistic evolution across three decades.
+                  <br>
+                  To support immediate experimentation, the dataset is accompanied by a script using TensorFlow’s YAMNet model to generate:
+                  <ul>
+                    <li>Segmented content timelines labeled by category (speech, music, other)</li>
+                    <li>Confidence scores and summaries for top YAMNet predictions</li>
+                    <li>Periods of detected silence</li>
+                    <li>Timeline visualizations per file, annotated with year</li>
+                  </ul>
+                  <br>
+                  Participants are encouraged to work with either the raw audio files, the machine-generated timelines, or both.
+                  <br>
+                  <strong>Mission - How can you contribute to this challenge?</strong>
+                  Participants in this challenge can contribute in several ways:
+                  <ul>
+                    <li><strong>Sonic Feature Recognition:</strong> Use the YAMNet model to automatically detect and label sound events across the dataset. Explore which types of sound events appear most frequently, and whether these patterns shift over time or in response to historical context.</li>
+                    <li><strong>Voice and Narration Analysis:</strong> Examine pitch, pace, and timbre of the narrator’s voice using audio analysis tools. Can we detect a “journalfilm voice”? How does it evolve across the decades?</li>
+                    <li><strong>Interpretive Framing:</strong> Reflect on the aesthetic and political role of sound in the journalfilms. How do sonic choices (e.g., dramatic underscoring, pauses, crowd sounds) contribute to shaping authority or emotional tone?</li>
+                    <li><strong>Model Critique and Adaptation:</strong> Consider the limitations of YAMNet when applied to historical, non-English, or archival sound material. What categories are misclassified or missing? What might be needed for more historically sensitive sound classification?</li>
+                  </ul>
+                  <br>
+                  <h3>Challenge 5 - Perestroika-Era Postures in Soviet Newsreels</h3>
+                  <strong>Description of the Challenge</strong>
+                  Perestroika, starting in the mid-1980s, was a period of political changes in the Soviet Union that had a seismic impact on Soviet media contents. From preceding literature we know that also the visual appearance of Soviet newsreels changed radically in the mid-1980s. While it has been hypothesized that one of the reasons for the radical shift in visual representation could be due to changing portrayals of people, as the newsreels ceased to represent heroes of socialist work and began to portray people in ways that highlighted ecological, economic, and political difficulties, this hypothesis has not been so far verified. The aim of this mini-challenge is to explore the postures, hands and facial gestures of individuals shown in the newsreels to detect evidence of a change in this regard taking place in the mid-1980s.
+                  <br>
+                  <strong>Dataset</strong>
+                  The dataset of the mini-challenge is derived from 418 editions of the ‘Novosti dnya’ (in English ‘News of the Day’) newsreel released from 1980 to 1990. These approximately 8-10 minute news films were shown in cinemas and on TV and focused on contemporary events. The Soviet authorities supervised production of the newsreels, and thus we can say that the newsreel contents, and changes in them, reflected changes in Soviet policies. The films are available in digital form as MP4 video files encoded in 320x240 resolution at 25 frames per second.
+                  <br>
+                  We anticipate that most participants will prefer to work with a dataset of per-frame features that have already been extracted from each video (after considerable upscaling) and are provided for download as a handful of files per video, named according to their id number and the source film’s release date and issue number [add download link here]. There is also, however, a more condensed dataset of extracted central frame images from all shots detected in each newsreel, on which participants can run their own face- and pose-extraction tools if desired. This dataset will be shared if a participant expresses their interest in advance.
+                  <br>
+                  The specific per-frame data available in the feature files includes the following:
+                  <ul>
+                    <li>Coordinates for a 13-keypoint pose armature (head, shoulders, hips, arms, legs) for each detected pose, in 2D or estimated 3D (3D data includes the inferred camera position).</li>
+                    <li>The pose coordinates can be provided in an expanded 45-keypoint armature if desired. Per-pose tracking identifiers also are available for calculating motion between frames.</li>
+                    <li>16-element “view-invariant probabilistic” embedding vectors for each pose.</li>
+                    <li>60-element action detection embeddings for each pose, which can be mapped to the AVA ontology.</li>
+                    <li>512-element DeepFace facial feature embeddings for each detected face, associated with a pose.</li>
+                    <li>Coordinates of a 21-landmarks armature for each detected hand, in 2D or body-relative 3D.</li>
+                    <li>Detected shot boundary frames.</li>
+                  </ul>
+                  <br>
+                  <strong>Mission - How can you contribute to this challenge?</strong>
+                  Considering periodicity: The relationship between the detected postures, gestures, expressions and actions in Soviet newsreels and the films’ positioning within Perestroika, arguably the defining phenomenon of 1980s Soviet media history, is core to this challenge. Participants may choose to partition the films into pre- and post- sets, or perhaps even an early/middle/late division, and attempt to identify features that differentiate each set, as a “distant viewing” exercise. Alternatively, they might choose to array the features on a continuous timeline and to apply visualizations or other analyses to explore whether other temporal divisions reveal themselves that confirm or complicate expectations of periodicity.
+                  <br>
+                  Finding “representative” body and/or hand poses: The application of clustering analysis and outlier detection approaches may contribute to identifying specific postures and/or hand gestures (or groupings thereof) that are more characteristically representative of one period/grouping of the films compared to others. Alternatively, teams may devise artificial “lexicons” of poses and hand gestures that are postulated to represent pre- or post-Perestroika media tendencies, then check whether similar poses/gestures are more commonly found in either subcorpus, on average.
+                  <br>
+                  Examining characteristics of facial expressions: Participants may apply emotion estimation to the facial embedding vectors to examine prevalences and potential trends in certain expression types across the newsreel corpus. Caution is warranted, however, given that “in-the-wild” facial data from low-resolution digitized newsreels tends to be even more “noisy” than pose and hand detection data, so drawing definitive conclusions may be challenging (but certainly rewarding if viable).
+                  <br>
+                  Describing classes and distributions of action types: The per-pose action embedding data can be explored to determine whether certain groupings are more common in newsreels from particular years, or even whether their distribution, frequency and durations across newsreels change over time. In this sense, the combination of temporal action similarity clusters and shot boundaries may be a way to detect and analyze semantically coherent “segments” of newsreels, and to check whether their durations and concentrations vary throughout the 1980s. Note that the actual 60-element embeddings can capture vastly more nuances than the rather spare English terminology of the “Atomic Visual Actions” taxonomy from which they are derived.
+                  <br>
+                  Technological critique: State-of-the-art technologies for pose and face detection and video action recognition typically have been developed for applications (military and police surveillance, autonomous robotics, sports analytics, semantic visual search) with markedly divergent priorities from the task to which we are applying them (analysis of historical newsreel footage). Can we detect such tendencies in the feature output data (and how might we try to do this)? How do these technological origins align with the nature of the newsreel as an instrument of state representation and control?
+                  <br>
+
                     <h2>Literature</h2>
                     <ul>
                         <li>Arnold, Taylor, and Lauren Tilton. Distant Viewing: Computational Exploration of Digital Images. The MIT Press, 2023. <a href="https://doi.org/10.7551/mitpress/14046.001.0001">https://doi.org/10.7551/mitpress/14046.001.0001</a>.</li>
@@ -48,5 +187,4 @@
 <div class="footer-container"></div>
 </div>
 </body>
-
 </html>
