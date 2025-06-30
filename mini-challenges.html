@@ -33,11 +33,9 @@
                   <h2 id="adaptive-image">Mini-challenges</h2>
                   <br>
                   <h3>Challenge 1 - Mini-MonNet (montage networks)</h3>
-                  <strong>Description of the Challenge</strong>
-                  In French, the word montage applied to cinema simply denotes editing. In Soviet montage theory, as originally introduced outside the USSR by Sergei Eisenstein, editing was the key mechanism for producing meaning. Later, the term "montage sequence", used primarily by British and American studios, became the common technique to suggest the passage of time.
-                  <br>
-                  We know that editing is an essential aspect of filmmaking. The types of shots that are available to a filmmaker or editor are fairly standardised and can be taken to be similar to the notes in a musical composition: their ordering, duration, and patterns of repetition and difference are carefully designed for effect, allowing the creative manipulation of time to shape a story using moving images. But unlike music, there are no computational methods specifically designed to model film editing. The goal of this challenge is to make progress towards such modelling. From film theory, we know that different editing styles have been identified to correspond to different filmmaking traditions. We want to know if and how we can detect these patterns computationally. Given the mini scope of this mini hackathon, we are aiming for a minimal binary classifier: Hollywood vs non-Hollywood films. Can we make this distinction based solely on editing patterns?
-                  <br>
+                  <strong>Description</strong>
+                  In French, the word montage applied to cinema simply denotes editing. In Soviet montage theory, as originally introduced outside the USSR by Sergei Eisenstein, editing was the key mechanism for producing meaning. Later, the term "montage sequence", used primarily by British and American studios, became the common technique to suggest the passage of time.<br>
+                  We know that editing is an essential aspect of filmmaking. The types of shots that are available to a filmmaker or editor are fairly standardised and can be taken to be similar to the notes in a musical composition: their ordering, duration, and patterns of repetition and difference are carefully designed for effect, allowing the creative manipulation of time to shape a story using moving images. But unlike music, there are no computational methods specifically designed to model film editing. The goal of this challenge is to make progress towards such modelling. From film theory, we know that different editing styles have been identified to correspond to different filmmaking traditions. We want to know if and how we can detect these patterns computationally. Given the mini scope of this mini hackathon, we are aiming for a minimal binary classifier: Hollywood vs non-Hollywood films. Can we make this distinction based solely on editing patterns?<br>
                   <strong>The mini challenge</strong>
                   The group working on mini-MonNet at ADHO will focus on evaluating the encoding strategy (how shots are represented as data) and analysing the results (if and how these encoding tell us something useful about editing style). This includes:
                   <ol>
@@ -47,24 +45,19 @@
                     <li>Exploratory data visualisation</li>
                     <li>Tweaking parameters for one or more re-runs of the processing method</li>
                   </ol>
-                  The goal is to test editing as a proxy for style in the widest possible sense, initially just if and and how the modelling matches known categories from film theory.
-                  <br>
-                  We will be using a custom pipeline to segment (shot boundary detection), annotate (shot scale classification), analyse (Markov dynamics) and visualisation (high-dimensional projection) of the material. Our afternoon will be successful if we can establish a baseline run for this kind of analysis that can be shared and replicated by others.
-                  <br>
+                  The goal is to test editing as a proxy for style in the widest possible sense, initially just if and and how the modelling matches known categories from film theory.<br>
+                  We will be using a custom pipeline to segment (shot boundary detection), annotate (shot scale classification), analyse (Markov dynamics) and visualisation (high-dimensional projection) of the material. Our afternoon will be successful if we can establish a baseline run for this kind of analysis that can be shared and replicated by others.<br>
                   <strong>Dataset</strong>
                   To identify these editing patterns, we will break down a collection of movie clips into its constituent shots, and represent these shots by a set of features, starting with shot duration, scale, and visual appearance. The dataset comprises a sample of these movie clips, from Hollywood and non-Hollywood traditions annotated by a film expert who will join us on the day. Download links for the files, metadata and code for segmentation and pre-processing to follow shortly.<br>
                   <strong>Mission - How can you contribute to this challenge?</strong>
-                  Colleagues from the fields of film and media can contribute to the definition of the task and the selection of features: are they relevant; do they fit with current film theory; are the results expected/surprising? They will be in a strong position to ask loads of questions and challenge the assumptions of the experiments.
-                  <br>
-                  Computer vision specialist colleagues can contribute their own or other methods, discuss alternative encoding or processing strategies, suggest code enhancements, and new technical directions. They will be in a strong position to test and implement variations of the core idea, and to challenge the computational feasibility of this kind of analysis.
-                  <br>
-                  Digital humanities or other types of interdisciplinary colleagues can contribute knowledge from their fields, including experiences with different types of temporal media, such as music and sound, videogames, or internet culture. They will be in a strong position to make connections, help understanding across disciplines, critique and suggest different kinds of data exploration and visualisation.
-                  <br>
+                  Colleagues from the fields of film and media can contribute to the definition of the task and the selection of features: are they relevant; do they fit with current film theory; are the results expected/surprising? They will be in a strong position to ask loads of questions and challenge the assumptions of the experiments.<br>
+                  Computer vision specialist colleagues can contribute their own or other methods, discuss alternative encoding or processing strategies, suggest code enhancements, and new technical directions. They will be in a strong position to test and implement variations of the core idea, and to challenge the computational feasibility of this kind of analysis.<br>
+                  Digital humanities or other types of interdisciplinary colleagues can contribute knowledge from their fields, including experiences with different types of temporal media, such as music and sound, videogames, or internet culture. They will be in a strong position to make connections, help understanding across disciplines, critique and suggest different kinds of data exploration and visualisation.<br>
                   Participants from any background may also want to contribute by documenting and formatting the experiments with a view of making them reproducible and accessible to other research communities.<br>
-                 <hr>
+                  <hr>
                   <br>
                  <h3>Challenge 2 - Framing Fossil Fuels: Visual Strategies in Socialist Non-Fiction Cinema</h3>
-                  <strong>Description of the Challenge</strong>
+                  <strong>Description</strong>
                   In this mini-challenge, participants will have the opportunity to explore a curated dataset of short non-fiction films and examine the visual language employed by state industry to present and explain new energy resources (coal, water, oil, gas, nuclear) to a broad audience. Using the open-source tool Collection Space Navigator (CSN), designed for the exploration and analysis of large collections of visual digital artifacts, participants will search for recurring visual patterns. They may choose to focus on a specific thematic cluster (coal, water, oil, gas, nuclear) to identify shared visual strategies, or adopt a temporal perspective to investigate how visual or thematic elements (such as representation of human labor, resource extraction and processing, automated processes, etc.), evolve over the selected time period.<br>
                   <strong>Dataset</strong>
                   The sample consists of Czechoslovak short non-fiction films covering the period of the 1950s to the 1980s produced by the state studios under the so-called Krátký film (Short Film). The films are thematically divided into categories based on the type of the resource under focus. The dataset itself includes a representative frame from the midpoint of every shot segment across all films in the sample. The frames are provided with metadata on the film title, year of production, category, and the director.<br>
@@ -81,14 +74,10 @@
                   <hr>
                   <br>
                   <h3>Challenge 3 - DOCUMERICA: Documentary Environmental Photography from the 1970s</h3>
-                  <strong>Description of the Challenge</strong>
-                    <br>
-                  The United States Environmental Protection Agency (EPA) emerged in 1970 to implement policies that would support efforts to improve the health of the environment and American citizens. Within a year of the EPA's founding, the new agency started Documerica, a documentary photography project designed to record the current state of the environment and improvements brought by new policies. With an archive of photographs documenting the need for and implementation of environmental laws, the project offers a powerful lens into the nation's effort to become more environmentally friendly. Nearly 16,000 photographs from the Documerica collection are digitized and available from the U.S. National Archives and Records Association (NARA), all in the public domain.
-                  <br>
+                  <strong>Description</strong>
+                  The United States Environmental Protection Agency (EPA) emerged in 1970 to implement policies that would support efforts to improve the health of the environment and American citizens. Within a year of the EPA's founding, the new agency started Documerica, a documentary photography project designed to record the current state of the environment and improvements brought by new policies. With an archive of photographs documenting the need for and implementation of environmental laws, the project offers a powerful lens into the nation's effort to become more environmentally friendly. Nearly 16,000 photographs from the Documerica collection are digitized and available from the U.S. National Archives and Records Association (NARA), all in the public domain.<br>
                   Using computational methods, we are interested in several questions, including: (1) how can we categorize the themes in the collection, (2) did certain photographers focus on specific topics, or is there a wide range of topics covered by many of the photographers, and (3) are there any
-                  <br>
                   <strong>Dataset</strong>
-                    <br>
                   The full data can be accessed and downloaded directly from the following URL:
                   <a href="https://doi.org/10.5281/zenodo.15585257">https://doi.org/10.5281/zenodo.15585257</a>
                   <br>
@@ -99,14 +88,13 @@
                     <li>documerica-gpt4-caption.csv: Automatically generated captions using the gpt-4-turbo-2024-04-09 with the instructions "Provide a detailed plain-text description of the objects, activities, people, background and/or composition of this photograph".</li>
                     <li>documerica-siglip-embed.json: Embedding generated from the multimodal siglip-base-patch16-224 model.</li>
                   </ul>
-                  <br>
                   The datasets are linked by the field nid, which corresponds to the unique numeric ID provided by the National Archives. See the included publications and the Digital Documerica website for more information about the corpus and why it was created.
-                  <br>
-                  <strong>Mission - How can you contribute to this challenge?</strong>
                     <br>
-                  Develop ways of visualizing, addressing, or extending the questions asked in the challenge description. Ideas for potential approaches, even if it is not possible to implement these during the workshop are also welcome. Finally, we also have a working visualization of some elements of the dataset available at <a href="https://digitaldocumerica.org/">https://digitaldocumerica.org/</a>. Advice, ideas, problems, or extensions to the existing visualization are also highly welcome.
-                  <br>
+                  <strong>Mission - How can you contribute to this challenge?</strong>
+                  Develop ways of visualizing, addressing, or extending the questions asked in the challenge description. Ideas for potential approaches, even if it is not possible to implement these during the workshop are also welcome. Finally, we also have a working visualization of some elements of the dataset available at <a href="https://digitaldocumerica.org/">https://digitaldocumerica.org/</a> 
+                  Advice, ideas, problems, or extensions to the existing visualization are also highly welcome.<br>
                     <hr>
+                    <br>
                   <h3>Challenge 4 - Studying the History of Swedish Journalfilm Through Machine Listening (1930 - 1960)</h3>
                   <strong>Description of the Challenge</strong>
                     <br>
